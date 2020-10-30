@@ -14,8 +14,13 @@ git clone -b master https://github.com/vernesong/OpenClash.git package/lean/luci
 #git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/lean/luci-app-smartdns  #smartdns DNS加速
 git clone https://github.com/garypang13/luci-app-eqos.git package/lean/luci-app-eqos  #内网IP限速工具
 git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git package/lean/luci-app-jd-dailybonus  #京东签到
+git clone https://github.com/bin20088/luci-app-koolddns.git package/lean/luci-app-koolddns
 svn co https://github.com/xiaorouji/openwrt-package/trunk/lienol/luci-app-passwall package/lean/luci-app-passwall  #passwall出国软件
 svn co https://github.com/xiaorouji/openwrt-package/trunk/package package/lean/package  #passwall出国软件配套
 
 rm -rf ./package/lean/luci-theme-argon && git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon  #新的argon主题
 git clone https://github.com/jerrykuku/luci-app-argon-config package/lean/luci-app-argon-config  #argon主题设置（在固件的系统里面）
+
+#赋予koolddns权限
+chmod 0755 package/openwrt-packages/luci-app-koolddns/root/etc/init.d/koolddns
+chmod 0755 package/openwrt-packages/luci-app-koolddns/root/usr/share/koolddns/aliddns
