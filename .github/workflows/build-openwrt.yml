@@ -235,7 +235,7 @@ jobs:
             ☆  源码 : ${{ env.REPO_URL }}
             ☆  分支 : ${{ env.REPO_BRANCH }}
             ☆  感谢源码作者无私分享！
-        path: openwrt/bin
+        files: ${{ env.FIRMWARE }}/*
 
     - name: 删除上传在github空间的老固件
       uses: c-hive/gha-remove-artifacts@v1
