@@ -20,3 +20,9 @@
 
 #rm -rf ./package/lean/luci-theme-argon && git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon  #新的argon主题
 #git clone https://github.com/jerrykuku/luci-app-argon-config package/lean/luci-app-argon-config  #argon主题设置（在固件的系统里面）
+
+rm -rf package/lean/v2ray
+svn co https://github.com/xiaorouji/openwrt-package/trunk/package/v2ray package/v2ray
+rm -rf package/ctcgfw/luci-app-vssr
+git clone https://github.com/0118Add/luci-app-vssr.git package/ctcgfw/luci-app-vssr
+git clone https://github.com/8688Add/luci-app-adbyby-plus-special.git package/luci-app-adbyby-plus-ram_edition-special
