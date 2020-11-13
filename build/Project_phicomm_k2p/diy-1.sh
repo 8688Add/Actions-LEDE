@@ -23,7 +23,6 @@
 
 rm -rf package/lean/v2ray
 svn co https://github.com/xiaorouji/openwrt-package/trunk/package/v2ray package/v2ray
-
 rm -rf package/ctcgfw/luci-app-vssr
 git clone https://github.com/0118Add/luci-app-vssr.git package/ctcgfw/luci-app-vssr
 git clone https://github.com/8688Add/luci-app-adbyby-plus-special.git package/luci-app-adbyby-plus-ram_edition-special
