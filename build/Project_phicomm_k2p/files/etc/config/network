@@ -27,6 +27,7 @@ config interface 'wan'
 	option password '82938678'
 	option ipv6 'auto'
 	option keepalive '0'
+        option mtu '1492'
 
 config device 'wan_eth0_2_dev'
 	option name 'eth0.2'
