@@ -25,6 +25,6 @@ rm -rf ./package/lean/luci-theme-argon && git clone -b 18.06 https://github.com/
 git clone https://github.com/jerrykuku/luci-app-vssr.git package/luci-app-vssr
 git clone https://github.com/jerrykuku/lua-maxminddb.git package/lua-maxminddb
 git clone https://github.com/8688Add/adblock-plus.git package/luci-app-adblock-plus
-#rm -rf package/lean/luci-app-frpc
-git clone https://github.com/8688Add/frpc.git package/luci-app-frpc-mod
-#chmod 0755 package/lean/luci-app-frpc/root/etc/init.d/frp
+rm -rf package/lean/luci-app-frpc
+git clone https://github.com/8688Add/luci-app-frpc-mod.git package/luci-app-frpc
+chmod 0755 package/lean/luci-app-frpc/root/etc/init.d/frp
