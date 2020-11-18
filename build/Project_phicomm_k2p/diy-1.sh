@@ -25,7 +25,7 @@
 #svn co https://github.com/xiaorouji/openwrt-package/trunk/package/v2ray package/v2ray
 #rm -rf package/ctcgfw/luci-app-vssr
 #git clone https://github.com/jerrykuku/luci-app-vssr.git package/ctcgfw/luci-app-vssr
-git clone https://github.com/8688Add/luci-app-adbyby-plus-special.git package/luci-app-adbyby-plus-ram_edition-special
-rm -rf package/lean/luci-app-frpc
-git clone https://github.com/8688Add/luci-app-frpc-mod.git package/lean/luci-app-frpc
-chmod 0755 package/lean/luci-app-frpc/root/etc/init.d/frp
+git clone https://github.com/8688Add/adblock-plus.git package/luci-app-adblock-plus
+#rm -rf package/lean/luci-app-frpc
+git clone https://github.com/8688Add/frpc.git package/luci-app-frpc-mod
+#chmod 0755 package/lean/luci-app-frpc/root/etc/init.d/frp
