@@ -27,5 +27,5 @@
 #git clone https://github.com/jerrykuku/luci-app-vssr.git package/ctcgfw/luci-app-vssr
 git clone https://github.com/8688Add/adblock-plus.git package/luci-app-adblock-plus
 rm -rf package/lean/luci-app-frpc
-https://github.com/8688Add/luci-app-frpc-mod.git package/lean/luci-app-frpc
+git clone https://github.com/8688Add/luci-app-frpc-mod.git package/lean/luci-app-frpc
 chmod 0755 package/lean/luci-app-frpc/root/etc/init.d/frp
