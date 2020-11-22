@@ -29,3 +29,8 @@ git clone https://github.com/8688Add/luci-app-adbyby-plus-special.git package/lu
 rm -rf package/lean/luci-app-frpc
 git clone https://github.com/8688Add/luci-app-frpc-mod.git package/lean/luci-app-frpc
 chmod 0755 package/lean/luci-app-frpc/root/etc/init.d/frp
+
+# 修改插件名字（修改名字后不知道会不会对插件功能有影响，自己多测试）
+sed -i 's/"Turbo ACC 网络加速"/"网络加速"/g' package/lean/luci-app-flowoffload/po/zh-cn/flowoffload.po
+sed -i 's/"Turbo ACC 网络加速"/"网络加速"/g' package/lean/luci-app-sfe/po/zh-cn/sfe.po
+sed -i 's/"解锁网易云灰色歌曲"/"网易云音乐"/g' package/lean/luci-app-unblockmusic/po/zh-cn/unblockmusic.po
